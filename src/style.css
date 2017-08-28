@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Againts';
+    src: url('./againts.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hello {
+    color: red;
+    font-family: 'Againts';
+    background: url('./smile.jpg');
+    font-size: 130px;
+}

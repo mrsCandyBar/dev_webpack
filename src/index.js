@@ -1,19 +1,16 @@
 import _ from 'lodash';
-import './style.css';
-import IMG from './smile.jpg';
-import Data from './data.xml';
+import printMe from './print.js';
 
 function component() {
     var element = document.createElement('div');
+    var btn = document.createElement('button');
 
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
 
-    var myDog = new Image();
-    myDog.src = IMG;
+    btn.innerHTML = 'Click me and check the console!';
+    btn.onclick = printMe;
 
-    //element.appendChild(myDog);
-    console.log('Data >>>', Data);
+    element.appendChild(btn);
 
     return element;
 }
